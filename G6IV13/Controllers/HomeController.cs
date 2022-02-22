@@ -11,6 +11,7 @@ namespace G6IV13.Controllers
 {
     public class HomeController : Controller
     {
+        //Modificaciones enviadas
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
