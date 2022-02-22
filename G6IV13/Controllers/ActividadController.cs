@@ -14,7 +14,13 @@ namespace G6IV13.Controllers
 
         public IActionResult Index()
         {
+            //Con el ViewBag pasamos la lista _actividades a la vista index y que pueda utilizar
             ViewBag.Actividades = _actividades;
+            return View();
+        }
+
+        public IActionResult Agregar()
+        {
             return View();
         }
     }
