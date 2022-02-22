@@ -1,0 +1,23 @@
+﻿<!-- Primero se define la cabecera -->
+<!-- class para el diseño que tenga bootstrap para ese elemento -->
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Descripción</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- En este ciclo se repite las filas de la lista actividades -->
+        @foreach(G6IV13.Models.Actividad item in ViewBag.Actividades)
+        {
+            <tr>
+                <!-- Aquí se imprimen los valores de item -->
+                <td>@item.ID</td>
+                <td>@item.Descripcion</td>
+                <td>@item.Estado</td>
+            </tr>
+        }
+    </tbody>
+</table>
