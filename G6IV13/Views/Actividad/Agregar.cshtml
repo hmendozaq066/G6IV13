@@ -1,6 +1,6 @@
 ﻿<div class="row">
     <div class="col-12">
-        <!--  -->
+        <!-- El método más usado para agregar o para recibir datos es POST -->
         <form asp-action="Agregar" method="post">
             <div class="form-group">
                 <label>ID</label>
@@ -8,11 +8,11 @@
             </div>
             <div class="form-group">
                 <label>Descripción</label>
-                <textarea name="Descripcion" class="form-control"></textarea>
+                <textarea required name="Descripcion" class="form-control"></textarea>
             </div>
             <div class="form-group">
                 <label>Estado</label>
-                <select name="Estado" class="form-control">
+                <select required name="Estado" class="form-control">
                     <option value="">Selecciona una opción</option>
                     <option value="1">Activo</option>
                     <option value="2">Terminado</option>
